@@ -1,1 +1,1 @@
-## Experiment name
+## Hopfield model for pattern storage task
