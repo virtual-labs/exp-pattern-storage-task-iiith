@@ -48,7 +48,7 @@ Consider a 3-unit feedback network with symmetric weights \( w_{ij} = w_{ji} \).
 
 
 
-**Figure 1**: *A 3-unit feedback network with symmetric weights \(w_{ij}\), threshold values \(\theta_{i}\) and the output states \(s_{i},~i = 1, 2 ,3\)*
+**Figure 2**: *A 3-unit feedback network with symmetric weights \(w_{ij}\), threshold values \(\theta_{i}\) and the output states \(s_{i},~i = 1, 2 ,3\)*
 
 
 #### Assuming the values
@@ -63,13 +63,13 @@ V(000) = 0.0, V(001) = 0.7, V(010) = -0.2, V(100) = -0.1, V(011) = 0.1, V(101) =
 
 The transition from any state to the next state can be computed using the state update equation. For example, if the current state is 000, by selecting any one unit, say unit 2, at random, we can find its next state by computing the activation value \( x_2 \) and comparing it with the threshold \(\theta_2\). Since \( x_2 (=0) \gt \theta_2 (= -0.2) \) the state of the unit 2 changes from 0 to 1. Thus, if we select this unit, there will be a transition from the state 000 to 010. Since we can select any one of the three units with equal probability, i.e., 1/3, the probability of making a transition from 000 to 010 is thus 1/3. Likewise by selecting the unit 1 for update, the network makes a transition from 000 to 100 with a probability 1/3. Selecting the unit 3 for update results in a transition from 000 to itself, since the activation \( x_3 (=0) \lt \theta_3 (=0.7).\)
 
-By computing the transition probabilities for all the states, we get the state transition diagram as shown in Fig. 2.
+By computing the transition probabilities for all the states, we get the state transition diagram as shown in Fig. 3.
 
 <img src="images/state_transition_diagram2.jpg">
 
 
 
-**Figure 2**: *Illustration of state transition diagram for a 3-unit feedback network.*
+**Figure 3**: *Illustration of state transition diagram for a 3-unit feedback network.*
 
 
 Thus a Hopfield Model generates an energy landscape where states in model are associated with different energy values. Stable states are the states which lie in the bottom of this landscape or rather have minimum energies. These states can then be used for the pattern storage task. Following figures show the steps involved in the experiment to choose weights for a given hopfield model, which ascertain some chosen states to attain stability. The capacity of a Hopfield model is determined by the number of patterns being stored as well as the probability of error that can be expected in the recall of patterns. For a N-unit network; where say L patterns are to be stored, for a probability of error of recall \(P_e=0.001\), the maximum storage capacity is given by \(L_{max}/N = 0.105\) 
@@ -79,7 +79,7 @@ Thus a Hopfield Model generates an energy landscape where states in model are as
 
 
 
-**Figure 3**: *Choosing minimum energy states in a Hopfield 3-unit feedback network.*
+**Figure 4**: *Choosing minimum energy states in a Hopfield 3-unit feedback network.*
 
 
 
@@ -87,7 +87,7 @@ Thus a Hopfield Model generates an energy landscape where states in model are as
 
 
 
-**Figure 4**: *Adjusting weights for the Hopfield 3-unit feedback network.*
+**Figure 5**: *Adjusting weights for the Hopfield 3-unit feedback network.*
 
 
 
@@ -95,7 +95,7 @@ Thus a Hopfield Model generates an energy landscape where states in model are as
 
 
 
-**Figure 5**: *State transition diagram with states and respective energy values in curly brackets.*
+**Figure 6**: *State transition diagram with states and respective energy values in curly brackets.*
 
 
 
@@ -103,4 +103,4 @@ Thus a Hopfield Model generates an energy landscape where states in model are as
 
 
 
-**Figure 6**: *State transition diagram with probabilities of transition in curly brackets.*
+**Figure 7**: *State transition diagram with probabilities of transition in curly brackets.*
