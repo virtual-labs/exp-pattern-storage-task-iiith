@@ -1,1 +1,1 @@
-## Hopfield model for pattern storage task
+## Hopfield Model for Pattern Storage Task
