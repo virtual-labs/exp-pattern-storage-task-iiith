@@ -1,0 +1,6 @@
+
+/home/runner/work/exp-pattern-storage-task-iiith/exp-pattern-storage-task-iiith/experiment/simulation/js/main.js
+  72:3  warning  'Arr1' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
